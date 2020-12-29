@@ -1,0 +1,42 @@
+body{
+  background-color: #f1faee;
+}
+header .container-fluid{
+  background-color: orange;
+}
+a{
+  color: gray!important;
+}
+a:hover{
+  color: red!important;
+}
+.nav-header .navbar-brand {
+  color : red !important;
+  font-weight: bold;
+  font-size: 1.8rem;
+
+}
+.populer-baslik {
+  background-color: red;
+  color: white;
+}
+.ekonomi{
+  border-left: 7px red solid;
+  padding: 0.8rem;
+  font-size:1.2rem;
+  background-color: white;
+}
+.card {
+  border-radius: 0.5rem;
+}
+.card-img-top{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.click{
+  background-color: #000000;
+  color: white;
+}
+.click:hover{
+  color: red;
+}

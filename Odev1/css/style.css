@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+h1 {
+  border-left: 10px solid red;
+  padding-left: 10px;
+  background-color: #ffffff60;
+  font-family: monospace;
+  text-shadow: 6px 6px 5px rgba(0, 0, 0, .4);
+}
+ol, ul, li, p{
+  text-shadow: 6px 6px 5px rgba(0, 0, 0, .4);
+  font-size: 24px;
+}
+.tasiyici {
+  padding: 10px 100px 10px 100px;
+  /*background: url(../resimler/bg.jpg) no-repeat right;
+  background-size: 700px;
+  min-height: 600px;
+  background-position: left;*/
+  z-index: 0;
+  border-radius: 40px 40px 0 0 ;
+
+}
+.sol-baris-foto{
+  margin-top: 17%;
+  padding: 4%;
+  border-radius: 50%;
+  z-index: -1;
+  position:fixed;
+
+}
+
+.baris-hakkinda {
+  margin: 0 0 0 30%;
+  padding: 2% 2%;
+  background-color: #b8de6f40;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+  border-radius: 40px 40px 0 0;
+}
+
+.baris-kimdir-yazi {
+  padding: 2rem;
+}
+
+.baris-foto {
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .6);
+  border-radius: 50%;
+}
+
+.tv-programlari {
+  margin: 1% 0 0 30%;
+  padding: 2% 2%;
+  background-color: #01c5c440;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+}
+
+.tv-prog-yazi {
+  padding-right: 2rem;
+}
+
+.tv-prog-foto {
+  width: 260px;
+  height: 200px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .6);
+  border-radius: 40px 0 40px 0;
+}
+
+.albumleri {
+  margin: 1% 0 0 30%;
+  padding: 2% 2%;
+  background-color: #f1e18940;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+  border-radius: 0 0 40px 40px;
+}
+
+.album-yazi {
+  padding-left: 12rem;
+}
+
+.album-foto {
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .6);
+  border-radius: 40px 0 40px 0;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Oyun</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/oyun1.css">
+  </head>
+  <body class="bg-info">
+
+  <div class="container mt-4">
+    <h1 id="baslat" onclick="oyunuBaslat()" class="oyunu-baslat w-50 text-center p-5 bg-secondary text-warning">Oyunu Baslat !</h1>
+    <div class="oyun-bolumu row m-3 p-5 text-center bg-dark text-light d-flex justify-content-between">
+      <div class="col-5 p-5 bg-secondary">
+        <h1 class="pb-4">Oyuncu 1</h1>
+        <img id="zar1" src="1.png" alt="">
+
+      </div>
+
+      <div class="col-5 p-5  bg-secondary">
+        <h1 class="pb-4">Oyuncu 2</h1>
+        <img id="zar2" src="1.png" alt="">
+      </div>
+
+    </div>
+    <h1 id="sonuc"class="sonuc text-center text-light bg-secondary w-50 p-4" >Sonuc</h1>
+  </div>
+
+  <script type="text/javascript">
+    function oyunuBaslat(){
+
+      var baslatElementi=document.querySelector("#baslat");
+      var oyuncu1Zar=document.querySelector("#zar1");
+      var oyuncu2Zar=document.querySelector("#zar2");
+      var sonuc=document.querySelector("#sonuc");
+
+      var rastgeleSayi1 = Math.floor(Math.random() * 6) + 1;
+      var rastgeleSayi2 = Math.floor(Math.random() * 6) + 1;
+
+      var resimAdresi1 = rastgeleSayi1 + ".png";
+      var resimAdresi2 = rastgeleSayi2 + ".png";
+
+      oyuncu1Zar.setAttribute("src" , resimAdresi1);
+      oyuncu2Zar.setAttribute("src" , resimAdresi2);
+
+      if(rastgeleSayi1>rastgeleSayi2){
+        sonuc.innerText = "Oyuncu 1 Kazandi!";
+      }else if (rastgeleSayi2>rastgeleSayi1){
+        sonuc.innerText = "Oyuncu 2 Kazandi!";
+      }else {
+        sonuc.innerText = "Berabere!";
+      }
+
+    }
+
+  </script>
+
+
+  </body>
+</html>

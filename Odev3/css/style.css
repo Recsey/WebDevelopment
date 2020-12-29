@@ -1,0 +1,89 @@
+/*body{
+  background-image: url(../resimler/africa.JPG);
+}*/
+#ust-kisim{
+background-image: url(../resimler/africa.JPG);
+}
+.navbar{
+  padding: 0 1rem;
+}
+
+/*.container-fluid{
+  background-image: url(../resimler/africa.JPG);
+
+}*/
+.nav-radius{
+  border-radius: 1rem;
+}
+.navbar-brand{
+  font-family: 'Ubuntu';
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.ust-alt-45px-bosluk{
+  padding: 45px 0;
+}
+.slogan{
+  font-family: 'Ubuntu';
+  font-size:2rem;
+  line-height:1.5;
+
+}
+.slogan-yazi{
+  font-family: 'Ubuntu';
+  font-size:1rem;
+  line-height:1.5;
+
+}
+.arka-plan-renk{
+  background-color: #7D46EB76;
+  border-radius: 10px;
+  padding: 8px 8px;
+}
+.row{
+  background-color: #ffffff50;
+  border-radius: 10px;
+  }
+/* ekran minimum 768px ise */
+@media (min-width: 768px) {
+  .resim{
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px white;
+    /*transform: rotate(25deg);*/
+  }
+}
+/* ekran maximum 767px ise */
+/* bizim 767px'den küçük cihazlar için eklediğimiz kod*/
+@media (max-width: 767px) {
+  .resim{
+    margin-top:30px;
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px white;
+
+  /*  transform: rotate(0deg);*/
+  }
+  .indirme-linkleri{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  .r-l-fluid-padding{
+    padding: 3% 15%;
+  }
+}
+@media (max-width: 991px) {
+  .r-l-fluid-padding{
+    padding: 3% 3%;
+  }
+}
+@media (min-width: 1200px) {
+  .r-l-fluid-padding{
+    padding: 3% 18%;
+  }
+}
+img{
+  width: 50%;
+}

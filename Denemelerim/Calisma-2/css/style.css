@@ -1,0 +1,82 @@
+/*Body Css baslangic*/
+body {
+  background-image: linear-gradient(50deg, rgba(40,43,40,0.5) , rgba(126,163,124,0.5) );
+
+}
+/*Body Css bitis*/
+/*Link styles*/
+a{
+  color: white;
+}
+a:hover{
+  color: orange;
+  text-decoration: none;
+}
+/* Header Css baslangic */
+header{
+  position: fixed;
+  width: 70%;
+  top: 0;
+  left: 33%;
+  z-index: 1;
+  box-shadow: 0 0 6px 0px black;
+}
+img{
+  height:  105%;
+}
+nav {
+  margin: 0 !important;
+}
+
+.dropdown-menu{
+  background: black!important;
+}
+.dropdown-item{
+  color: white!important;
+}
+
+.dropdown-item:hover{
+  color: orange!important;
+  background-color: #000000!important;
+}
+/* Header bitis */
+
+/* Content baslangic */
+content{
+  position: relative;
+  display: flex;
+  width: 67%;
+  left: 33%;
+}
+.left-side{
+  position: fixed;
+  top: 0;
+}
+/* Content bitis */
+/*media baslangic*/
+
+@media(max-width:1023px) {
+  header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  section .row{
+    visibility: hidden;
+  }
+  content{
+    width: 100%;
+    left: 0;
+  }
+  .who-is-willy,
+  .songs{
+    padding-top: 3rem!important;
+    margin: 0 auto;
+  }
+  .video{
+    display: flex;
+    justify-content: center;
+  }
+}

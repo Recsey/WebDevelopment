@@ -1,0 +1,8 @@
+.oyunu-baslat,
+.sonuc,
+.oyun-bolumu,
+.col-5{
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0px 0 0 5px #ffffff80;
+}

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  margin: 1%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 5px;
+  border: 2px solid #204051;
+  border-radius: 25%;
+  background-color: white;
+  color: #204051;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  margin-left: 10px;
+}
+
+.link:hover {
+  background-color: #3b6978;
+  border: 2px solid #84a9ac;
+  color: white;
+}
+
+.header {
+  background-color: #84a9ac65;
+  border-radius: 20px 20px 0 0;
+  height: 175px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 7px 0 0  rgba(16, 30, 51, 0.7);
+  z-index: 1;
+}
+
+.banner-yazi {
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 4px 1px rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.logo {
+  /*background-color: #84a9ac65;*/
+  border-radius: 50%;
+  height: 175px;
+  box-shadow: 0 0 3px 0  rgba(16, 30, 51, 0.7);
+  display: inline-block;
+  float: left;
+}
+
+.logo-pic {
+  width: 172px;
+  border-radius: 0 0 80px 0;
+  /*box-shadow: 3px 3px 3px 3px  rgba(16, 30, 51, 0.7);*/
+}
+
+.linkler {
+  float: right;
+  height: 50px;
+  margin-top: 3%;
+  margin-right: 3%;
+
+}
+
+.under-cons {
+  font-size: 10rem;
+  text-align: center;
+  color: white;
+
+}
+
+.container {
+  background-color: #20405165;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: auto;
+  width: 100%;
+  height: 475px;
+  box-shadow: 0 7px 0 0  rgba(16, 30, 51, 0.7);
+}
+
+.footer {
+  height: 80px;
+  background-color: #84a9ac65;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+
+}
+.social{
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 500px;
+}
+.fab {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+
+}
+
+.fab:hover {
+    opacity: 0.7;
+    border-radius: 20%;
+}
+.fa-facebook-f {
+  background: #3B5998;
+  color: white;
+  border-radius: 20%;
+  }
+
+.fa-twitter-square {
+  background: #55ACEE;
+  color: white;
+  border-radius: 20%;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border-radius: 20%;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  border-radius: 20%;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  border-radius: 20%;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+  border-radius: 20%;
+}
+.social-padding{
+  padding-left: 2%;
+}

@@ -1,0 +1,172 @@
+/* Google'dan alinan fontlar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Body de bazi degisiklikler yapmak gerekti */
+body {
+  background-color: #FAD961;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../img/speaker-bg.PNG);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
+a {
+  font-weight: 800 !important;
+  color: #1B1B1B;
+  text-decoration: none !important;
+}
+ .footer a:hover {
+   color: #1B1B1B;
+   background-color: #fff;
+ }
+
+ .footer a.black:hover {
+   color: #fff !important;
+   background-color: #1B1B1B !important;
+ }
+/* Logo uzerinde islem yatik */
+.logo {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* User resmine padding ekledik */
+.p-padding {
+  padding-left: 600px;
+}
+
+/* Dropdoiwn menu ayarlarini degistirdik */
+.dropdown-toggle,
+.dropdown-menu {
+  background-color: inherit;
+  color: #1B1B1B;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.dropdown-item:hover {
+  background-color: #6c757d;
+}
+
+/* Ust kisma ait sectionda duzenlemeler yaptik */
+.banner .container-fluid .row {
+  border: 2.5px solid #1B1B1B;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  width: 500px;
+  font-size: 1.5rem;
+  position: relative;
+  margin: 0 auto;
+  top: 30px;
+  z-index: 1;
+}
+
+.banner .row i {
+  font-size: 1.3rem;
+}
+
+.pledged {
+  border-left: 1px solid #1B1B1B70;
+}
+
+.b-speaker {
+  font-size: 4rem;
+}
+
+/* orta kisimda yer alan sectionda duzenlemeler yaptik */
+.middle {
+  top: 100px;
+}
+
+.layer .card-img-top,
+.tools .card-img-top {
+  top: 39px;
+}
+
+.l-text,
+.t-text {
+  padding-left: 70px;
+}
+
+.layer .card-text,
+.tools .card-text {
+  width: 25%;
+}
+
+.middle img {
+  width: 49px;
+  height: 40px;
+}
+
+.card-padding {
+  padding-left: 100px;
+}
+
+.card {
+  background-color: inherit;
+  border: 0;
+  padding: 0;
+}
+
+.card-text,
+.copyright {
+  font-weight: 600;
+}
+
+/* En alt kisimdaki sectionda duzenlemeler yaptik */
+.footer {
+  top: 200px;
+  margin-top: 2rem;
+}
+.white{
+  color: #fff;
+}
+.fab {
+  color: #fff;
+}
+.fab:hover {
+  color: #1B1B1B;
+  background-color: #fff;
+}
+
+/* Bootsrtap ile ayarlayamadigim media kodlari */
+@media screen and (min-width:320px) and (max-width:900px) {
+  body {
+    background-size:55%;
+
+  }
+
+  .p-padding {
+    padding-left: 350px;
+    position: absolute;
+    top:0px;
+  }
+
+  .card {
+    background-color: inherit;
+    border: 0;
+  }
+
+.footer {
+    background-color: #1B1B1B70;
+    text-align: center;
+    color:  #fff !important;
+    padding:0 !important;
+    margin: 0 !important;
+}
+.black{
+  color: #fff;
+}
+.footer a.black:hover{
+  background-color: #FFF!important;
+  color: #1B1B1B!important;
+}
+
+.footer .icons{
+  text-align: center!important;
+}
+}
