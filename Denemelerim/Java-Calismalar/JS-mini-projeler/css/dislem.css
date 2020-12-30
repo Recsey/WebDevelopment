@@ -1,0 +1,13 @@
+body{
+
+  background-image: url('../math-bg.jpg');
+}
+section{
+  margin: 20% 20% auto;
+  border: 0.4rem solid black;
+  border-radius: 10px;
+}
+.hesaplama{
+  border-left: 0.2rem solid black;
+  border-right:  0.2rem solid black;
+}
