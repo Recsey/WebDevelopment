@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
+  <title>Login Sayfa Projesi</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/signin.css" rel="stylesheet">
+</head>
+
+<body class="body-slc">
+  <header class="d-flex justify-content-center align-items-center">
+    <div class="noodle bg-warning  text-center">
+      <img class="pt-4" src="noodle.png" alt="Logo">
+    </div>
+  </header>
+
+  <main class="form-signin text-center bg-info">
+    <form class="form-orgn" onsubmit="return false">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <label for="inputEmail" class="visually-hidden">Email address</label>
+      <input oninput="girisKontrol()" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="visually-hidden">Password</label>
+      <input oninput="girisKontrol()" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+
+      <p id="email-control-text" class=""></p>
+      <p id="psw-control-text" class=""></p>
+      <h1 id="wellcome-text" class=""></h1>
+
+
+      <!-- <button onclick="girisYap()" class="w-50 btn btn-lg btn-warning" type="submit">Sign in</button> -->
+      <p id="copy" class="mt-5 text-muted">&copy; 2017-2020</p>
+    </form>
+  </main>
+  <script type="text/javascript">
+
+    function girisKontrol() {
+
+      var emailBox = document.querySelector("#inputEmail");
+      var passwordBox = document.querySelector("#inputPassword");
+      var emailControlText = document.querySelector("#email-control-text");
+      var pswControlText = document.querySelector("#psw-control-text");
+      var wellcomeText = document.querySelector("#wellcome-text");
+
+
+      if(emailBox.value == "admin@admin.com"){
+        emailControlText.innerText = "Valid e-mail adress!";
+        emailControlText.classList.remove("text-danger");
+        emailControlText.classList.add("text-success");
+      }else{
+        emailControlText.innerText = "Invalid e-mail adress!";
+        emailControlText.classList.remove("text-success")
+        emailControlText.classList.add("text-danger")
+      }
+
+      if(passwordBox.value == 1234){
+        pswControlText.innerText = "Valid password!";
+        pswControlText.classList.remove("text-danger");
+        pswControlText.classList.add("text-success");
+
+      }else{
+        pswControlText.innerText = "Invalid passwords!";
+        pswControlText.classList.remove("text-success");
+        pswControlText.classList.add("text-danger");
+
+      }if(emailBox.value == "admin@admin.com" && passwordBox.value == 1234){
+        wellcomeText.innerText = "Wellcome!";
+        wellcomeText.classList.remove("text-danger")
+        wellcomeText.classList.add("text-success")
+      }else{
+        wellcomeText.innerText = "You have to enter the valid information!";
+        wellcomeText.classList.remove("text-succes")
+        wellcomeText.classList.add("text-danger")
+      }
+
+    }
+
+
+    // var emailBox = document.getElementById("inputEmail");
+    // var passwordBox = document.getElementById("inputPassword");
+    //
+    //
+    // function girisYap() {
+    //   var email = emailBox.value;
+    //   var password = passwordBox.value;
+    //   var alertText = document.getElementById("copy");
+    //   var loginSuccessfull = document.querySelector("form");
+    //   var wellCome = document.querySelector("main");
+    //
+    //   // if(email=="admin@admin.com" && password == 1234){
+    //   //   alertText.innerText = "Login Succesfull!";
+    //   // }else{
+    //   //    alertText.innerText = "Login failed!";
+    //   //
+    //   // }
+    //   if (email == "admin@admin.com" && password == 1234) {
+    //     loginSuccessfull.remove();
+    //     wellCome.innerText = " " + " Hos Geldiniz !" + " " + email;
+    //   } else {
+    //     alertText.innerText = "Login failed!";
+    //   }
+    // }
+  </script>
+</body>
+
+</html>
